@@ -9,7 +9,7 @@ public class Garage {
     public void park(Car car) {
         if (car == null) return;
         if (!availableCars.containsKey(car)) {
-            availableCars.put(car, 0);
+            availableCars.put(car, 1);
         }
         availableCars.put(car, availableCars.get(car) + 1);
     }
