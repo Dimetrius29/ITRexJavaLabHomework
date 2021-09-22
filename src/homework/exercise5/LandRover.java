@@ -13,7 +13,6 @@ public class LandRover {
         this.n = n;
     }
 
-    // printLand.run() outputs "land".
     public synchronized void land(Runnable printLand) throws InterruptedException {
         while (count <= n) {
             if ((count % 3 == 0) && !(count % 5 == 0)) {
@@ -26,7 +25,6 @@ public class LandRover {
         }
     }
 
-    // printRover.run() outputs "rover".
     public synchronized void rover(Runnable printRover) throws InterruptedException {
         while (count <= n) {
             if (!(count % 3 == 0) && (count % 5 == 0)) {
@@ -39,7 +37,6 @@ public class LandRover {
         }
     }
 
-    // printLandRover.run() outputs "landrover".
     public synchronized void landrover(Runnable printLandRover) throws InterruptedException {
         while (count <= n) {
             if ((count % 3 == 0) && (count % 5 == 0)) {
@@ -52,7 +49,6 @@ public class LandRover {
         }
     }
 
-    // printNumber.accept(x) outputs "x", where x is an integer.
     public synchronized void number(IntConsumer printNumber) throws InterruptedException {
         while (count <= n) {
             if (!(count % 3 == 0) && !(count % 5 == 0)) {
