@@ -1,0 +1,2 @@
+com/itrex/java/lab/App.java
+ com.itrex.java.lab.App
